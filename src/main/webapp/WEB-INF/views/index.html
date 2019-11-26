@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="layout :: head"></head>
+<head th:replace="/layout :: head">
+</head>
 <body>
 <h3>Customers</h3>
+
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
 <p>
     <a th:href="@{/customer/create}">
         Add new customer
@@ -31,6 +38,6 @@
     </tr>
     </tbody>
 </table>
-<footer th:replace="layout :: footer"></footer>
+<footer th:replace="/layout :: footer"></footer>
 </body>
 </html>
