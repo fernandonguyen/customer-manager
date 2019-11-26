@@ -10,7 +10,7 @@ import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 
-@Configuration
+
 public class AppConfiguration implements ApplicationContextAware {
     @Bean
     public SpringResourceTemplateResolver templateResolver(){
